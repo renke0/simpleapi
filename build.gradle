@@ -1,0 +1,13 @@
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'idea'
+
+  group = 'org.renke'
+  version = '0.0.1-SNAPSHOT'
+  sourceCompatibility = 10
+
+  repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+  }
+}
