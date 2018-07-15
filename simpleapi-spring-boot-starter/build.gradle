@@ -1,0 +1,25 @@
+buildscript {
+  ext {
+    appName = 'simpleapi-spring-boot-starter'
+    springBootVersion = '2.0.3.RELEASE'
+    lombokVersion = '1.18.0'
+  }
+}
+
+repositories {
+  mavenCentral()
+  maven { url 'https://jitpack.io' }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group = 'org.renke'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 10
+
+dependencies {
+  compile project(':simpleapi')
+  compile "org.springframework.boot:spring-boot-starter:$springBootVersion"
+  testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+}
