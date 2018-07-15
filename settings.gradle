@@ -1,1 +1,1 @@
-include 'simpleapi', 'simpleapi-spring-boot-starter'
+include 'simpleapi2', 'simpleapi3', 'simpleapi-spring-boot-starter'
