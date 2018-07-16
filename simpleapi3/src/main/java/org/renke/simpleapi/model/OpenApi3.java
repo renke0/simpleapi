@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class OpenApiDocument extends Extensible {
+public class OpenApi3 extends Extensible implements OpenApiDocumentRoot {
   private String openapi;
   private Info info;
   private List<Server> servers;

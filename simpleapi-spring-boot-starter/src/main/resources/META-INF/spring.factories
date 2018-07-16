@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.renke.simpleapi.autoconfigure.SimpleApi2AutoConfiguration,\
+  org.renke.simpleapi.autoconfigure.SimpleApi3AutoConfiguration,\
+  org.renke.simpleapi.autoconfigure.SimpleApiCommonAutoConfiguration

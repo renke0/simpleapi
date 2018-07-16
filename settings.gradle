@@ -1,5 +1,6 @@
 include(
-    'simpleapi-core',
     'simpleapi2',
     'simpleapi3',
+    'simpleapi-core',
+    'simpleapi-demo',
     'simpleapi-spring-boot-starter')

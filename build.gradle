@@ -1,6 +1,9 @@
 subprojects {
   ext.versions = [
-      lombok: '1.18.0'
+      lombok    : '1.18.0',
+      spring    : '5.0.7.RELEASE',
+      springBoot: '2.0.3.RELEASE',
+      guava     : '25.1-jre'
   ]
 
   apply plugin: 'java'

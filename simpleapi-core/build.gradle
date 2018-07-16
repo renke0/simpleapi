@@ -5,6 +5,9 @@ buildscript {
 }
 
 dependencies {
+  compile "com.google.guava:guava:$versions.guava"
+
   compileOnly "org.projectlombok:lombok:$versions.lombok"
+
   annotationProcessor "org.projectlombok:lombok:$versions.lombok"
 }

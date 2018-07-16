@@ -1,13 +1,24 @@
 buildscript {
   ext {
     appName = 'simpleapi-spring-boot-starter'
-    springBootVersion = '2.0.3.RELEASE'
   }
 }
 
 dependencies {
-  compile project(':simpleapi2')
-  compile project(':simpleapi3')
-  compile "org.springframework.boot:spring-boot-starter:$springBootVersion"
-  testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+  compile project(':simpleapi-core')
+  compile "org.springframework.boot:spring-boot-starter:$versions.springBoot"
+  compile "org.springframework.boot:spring-boot-autoconfigure:$versions.springBoot"
+  compile "org.springframework:spring-web:$versions.spring"
+  compile "org.springframework:spring-webmvc:$versions.spring"
+  compile "com.google.guava:guava:$versions.guava"
+
+  annotationProcessor "org.springframework.boot:spring-boot-configuration-processor:$versions.springBoot"
+  annotationProcessor "org.projectlombok:lombok:$versions.lombok"
+
+  compileOnly project(':simpleapi2')
+  compileOnly project(':simpleapi3')
+  compileOnly "org.springframework.boot:spring-boot-configuration-processor:$versions.springBoot"
+  compileOnly "org.projectlombok:lombok:$versions.lombok"
+
+  testCompile "org.springframework.boot:spring-boot-starter-test:$versions.springBoot"
 }
