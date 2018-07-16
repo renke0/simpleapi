@@ -1,6 +1,6 @@
 buildscript {
   ext {
-    appName = 'simpleapi3'
+    appName = 'simpleapi-core'
   }
 }
 

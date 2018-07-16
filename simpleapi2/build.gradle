@@ -1,11 +1,10 @@
 buildscript {
   ext {
     appName = 'simpleapi2'
-    lombokVersion = '1.18.0'
   }
 }
 
 dependencies {
-  compileOnly "org.projectlombok:lombok:$lombokVersion"
-  annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+  compileOnly "org.projectlombok:lombok:$versions.lombok"
+  annotationProcessor "org.projectlombok:lombok:$versions.lombok"
 }
