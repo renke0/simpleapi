@@ -5,6 +5,9 @@ buildscript {
 }
 
 dependencies {
+  compile project(':simpleapi-core')
+
   compileOnly "org.projectlombok:lombok:$versions.lombok"
+
   annotationProcessor "org.projectlombok:lombok:$versions.lombok"
 }
