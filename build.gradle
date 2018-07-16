@@ -1,4 +1,8 @@
 subprojects {
+  ext.versions = [
+      lombok: '1.18.0'
+  ]
+
   apply plugin: 'java'
   apply plugin: 'idea'
 
